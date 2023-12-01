@@ -13,9 +13,12 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/desktop.css" />
   <link rel="stylesheet" href="/assets/css/mobile.css" />
+
   <link rel="stylesheet" href="/assets/css/script.css">
   <link rel="stylesheet" href="/assets/css/dashboard .css">
   
+
+ 
 
   <!-- Star fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,10 +28,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet" />
+
    
   <!-- Star Js -->
     <script src="/script.js" defer></script>
     <script src="bdForms.js" defer></script>
+
+
+
 
 </head>
 
@@ -57,86 +64,119 @@
         </ul>
       </nav>
     </section>
-  
   </header>
-  
-  <!-- STAR Formulario -->
-  <div class="testbox">
-    <div id="submissionList"></div>
-    <form action="/">
+
+ 
+  <div class="content-container">
+    <div class="form-container">
+      <div id="submissionList"></div>
+      <form action="/">
         <div class="banner">
-            <h1>Formulario de Inscrição de Curso</h1>
+          <h1>Formulario de Inscrição de Curso</h1>
         </div>
         <div class="item">
-            <p>Nome</p>
-            <div class="name-item">
-                <input type="text" name="name" placeholder="Nome" />
-                <input type="text" name="lastName" placeholder="Sobrenome" />
-            </div>
+          <p>Nome</p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="Nome" />
+            <input type="text" name="lastName" placeholder="Sobrenome" />
+          </div>
         </div>
         <div class="item">
-            <p>Email</p>
-            <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+          <p>Email</p>
+          <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
         </div>
         <div class="item">
-            <p>Telefone</p>
-            <input type="tel" name="phone" id="phone"  placeholder="(##) #####-####" maxlength="20"required />
+          <p>Telefone</p>
+          <input type="tel" name="phone" id="phone" placeholder="(##) #####-####" maxlength="20" required />
         </div>
         <div class="question">
-            <p>Sexo</p>
-            <div class="question-answer">
-                <div>
-                    <input type="radio" value="none" id="radio_1" name="genero" />
-                    <label for="radio_1" class="radio"><span>Masculino</span></label>
-                </div>
-                <div>
-                    <input type="radio" value="none" id="radio_2" name="genero" />
-                    <label for="radio_2" class="radio"><span>Femenino</span></label>
-                </div>
-                <select required>
-                    <option value="">Escolha uma opção</option>
-                    <option value="1">Sobre Hidrogenio verde</option>
-                    <option value="2">Produção no Brasil</option>
-                    <option value="3">Informações</option>
-                    <option value="3">Outros</option>
-                </select>
+          <p>Sexo</p>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_1" name="genero" />
+              <label for="radio_1" class="radio"><span>Masculino</span></label>
             </div>
+            <div>
+              <input type="radio" value="none" id="radio_2" name="genero" />
+              <label for="radio_2" class="radio"><span>Femenino</span></label>
+            </div>
+            <select required>
+              <option value="">Escolha uma opção</option>
+              <option value="1">Sobre Hidrogenio verde</option>
+              <option value="2">Produção no Brasil</option>
+              <option value="3">Informações</option>
+              <option value="3">Outros</option>
+            </select>
+          </div>
         </div>
 
-      
-      
         <div class="btn-block">
-            <button type="submit" href="/">Enviar Solicitção</button>
-            <a id="clearFormBtn" class="btn-dash" href="/">Limpar Campos</a>
-            <a class="btn-dash" href="/contens/contato.html" aria-placeholder="target">Dashboard</a>
+          <button type="submit" href="/">Enviar Solicitção</button>
+          <a id="clearFormBtn" class="btn-dash" href="/contens/contato.html">Limpar Campos</a>
+          <a class="btn-dash" href="/contens/contato.html" aria-placeholder="target">Dashboard</a>
         </div>
-        
-        <!-- STAR Dashboard -->
-        
-        <div class="dashboard-container">
-          <h1>Dashboard de Inscrições</h1>
-          <aside>
-              <input type="text" id="searchInput" placeholder="Pesquisar...">
-              <button id="searchButton">Buscar</button>
-              <button id="clearAllBtn" onclick="clearAllSubmissions()">Excluir Todos</button>
-          </aside>
-          <section class="dashboard-content">
-              <div id="inscricoesList" class="submission-list"></div>
-          </section>
-        </div>
+      </form>
+    </div>
+    <div class="dashboard-container">
+      <!-- STAR Dashboard -->
+      <h1>Dashboard de Inscrições</h1>
+      <aside>
+        <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Pesquisar cadastrados...">
+        <button id="searchButton">Buscar</button>
+        <button id="clearAllBtn" onclick="clearAllSubmissions()">
+          Excluir Todos
+        </button>
+      </aside>
+      <section class="dashboard-content">
+        <div id="inscricoesList" class="submission-list"></div>
+      </section>
+    </div>
+  </div>
 
-    </form>
-</div>
+  <!-- STAR Formulario -->
+  <div class="testbox"></div>
+>>>>>>> a053853 (fazendo deploy da app)
 
   <!-- Star footer -->
   <footer class="footer">
-    <p class="rodape__redes-sociais">Acesse nossas redes:
-        <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp icon-rede"></i></a>
-        <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch icon-rede"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon-rede"></i></a>
-        <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter icon-rede"></i></a>
+    <p class="rodape__redes-sociais">
+      Acesse nossas redes:
+      <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp icon-rede"></i></a>
+      <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch icon-rede"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon-rede"></i></a>
+      <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter icon-rede"></i></a>
     </p>
-</footer>
+  </footer>
+  <!-- STAR Scripts -->
+  <script src="https://kit.fontawesome.com/2b0c6872f0.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/dashboard.js"></script>
+  <script src="/assets/js/bdForms.js"></script>
+  <script>
+    function searchTable() {
+      let input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("searchInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("dataTable");
+      tr = table.getElementsByTagName("tr");
+
+      for (i = 0; i < tr.length; i++) {
+        // Alterado para pesquisar em todas as células da linha
+        td = tr[i].getElementsByTagName("td");
+        for (let j = 0; j < td.length; j++) {
+          if (td[j]) {
+            txtValue = td[j].textContent || td[j].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+              break; // Pare de procurar outras células nesta linha
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>

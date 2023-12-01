@@ -1,0 +1,26 @@
+{
+  "homepage" : "https://AntonioFreire203.github.io/hidrogenio-verde",
+  "name": "hidrogenio-verde",
+  "version": "1.0.0",
+  "description": "<div class=\"subtitulo\" align=\"center\">     Este é o repositório do projeto <b>H2Verde</b> projeto de Front-end-UTFPR. </div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "predeploy": "npm  run build",
+    "deploy":"gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioFreire203/hidrogenio-verde.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonioFreire203/hidrogenio-verde/issues"
+  },
+ 
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}
