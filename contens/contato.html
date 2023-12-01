@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H2Verde</title>
+  <link rel="imagem icon" href="img/icons_logos/H2Verde_150x150.png" type="image/x-icon" />
+
+  <!-- STAR Style Sheets -->
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/desktop.css" />
+  <link rel="stylesheet" href="/assets/css/mobile.css" />
+  <link rel="stylesheet" href="/assets/css/script.css">
+  <link rel="stylesheet" href="/assets/css/dashboard .css">
+  
+
+  <!-- Star fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet" />
+   
+  <!-- Star Js -->
+    <script src="/script.js" defer></script>
+    <script src="bdForms.js" defer></script>
+
+</head>
+
+<body>
+  
+  <!-- STAR Cabeçalho -->
+  <header class="cabecalho__container">
+    <section class="cabecalho__principal">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="logo da H2Verde" class="logo__h2verde" />
+      </a>
+      <nav class="cabecalho__menu">
+        <ul class="menu__lista">
+          <li class="menu__itens">
+            <a href="/contens/sobre.html" target="_top">Sobre</a>
+          </li>
+          <li class="menu__itens">
+            <a href="/contens/setores.html" target="_top">Produção Brasil</a>
+          </li>
+          <li class="menu__itens">
+            <a href="/contens/contato.html" target="_top">Contato</a>
+          </li>
+          <li class="menu__itens">
+            <a href="/contens/informacoes.html" target="_top">Informações</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  
+  </header>
+  
+  <!-- STAR Formulario -->
+  <div class="testbox">
+    <div id="submissionList"></div>
+    <form action="/">
+        <div class="banner">
+            <h1>Formulario de Inscrição de Curso</h1>
+        </div>
+        <div class="item">
+            <p>Nome</p>
+            <div class="name-item">
+                <input type="text" name="name" placeholder="Nome" />
+                <input type="text" name="lastName" placeholder="Sobrenome" />
+            </div>
+        </div>
+        <div class="item">
+            <p>Email</p>
+            <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+        </div>
+        <div class="item">
+            <p>Telefone</p>
+            <input type="tel" name="phone" id="phone"  placeholder="(##) #####-####" maxlength="20"required />
+        </div>
+        <div class="question">
+            <p>Sexo</p>
+            <div class="question-answer">
+                <div>
+                    <input type="radio" value="none" id="radio_1" name="genero" />
+                    <label for="radio_1" class="radio"><span>Masculino</span></label>
+                </div>
+                <div>
+                    <input type="radio" value="none" id="radio_2" name="genero" />
+                    <label for="radio_2" class="radio"><span>Femenino</span></label>
+                </div>
+                <select required>
+                    <option value="">Escolha uma opção</option>
+                    <option value="1">Sobre Hidrogenio verde</option>
+                    <option value="2">Produção no Brasil</option>
+                    <option value="3">Informações</option>
+                    <option value="3">Outros</option>
+                </select>
+            </div>
+        </div>
+
+      
+      
+        <div class="btn-block">
+            <button type="submit" href="/">Enviar Solicitção</button>
+            <a id="clearFormBtn" class="btn-dash" href="/">Limpar Campos</a>
+            <a class="btn-dash" href="/contens/contato.html" aria-placeholder="target">Dashboard</a>
+        </div>
+        
+        <!-- STAR Dashboard -->
+        
+        <div class="dashboard-container">
+          <h1>Dashboard de Inscrições</h1>
+          <aside>
+              <input type="text" id="searchInput" placeholder="Pesquisar...">
+              <button id="searchButton">Buscar</button>
+              <button id="clearAllBtn" onclick="clearAllSubmissions()">Excluir Todos</button>
+          </aside>
+          <section class="dashboard-content">
+              <div id="inscricoesList" class="submission-list"></div>
+          </section>
+        </div>
+
+    </form>
+</div>
+
+  <!-- Star footer -->
+  <footer class="footer">
+    <p class="rodape__redes-sociais">Acesse nossas redes:
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp icon-rede"></i></a>
+        <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch icon-rede"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon-rede"></i></a>
+        <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter icon-rede"></i></a>
+    </p>
+</footer>
+</body>
+
+</html>

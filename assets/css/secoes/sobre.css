@@ -1,0 +1,42 @@
+@import url(/assets/css/base.css);
+@import url(/assets/css/desktop.css);
+
+.sobre__banner{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 110%;
+    mix-blend-mode: multiply;
+}
+.cabecalho__chamada{
+    padding: 64px 121.5px;
+}
+
+.cabecalho__chamada-video {
+    width: 100%; 
+    height: auto; 
+}
+
+
+.img-second{
+    background-image: url(/img/info-producao-h2verde-second.png);
+    order: 2;
+    width: 220em;
+
+}
+
+.img-third{
+    background-image: url(/img/img-third-sobre.png);
+    width: 180em;
+}
+
+.chamada__texto{
+    text-align: left;
+}
+
+.text-alt{
+    text-align: left;
+}
+strong.destaque{
+
+    color: rgb(16, 90, 16);
+}

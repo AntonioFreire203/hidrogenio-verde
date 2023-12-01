@@ -1,0 +1,108 @@
+@import url(/assets/css/base.css);
+@import url(/assets/css/desktop.css);
+
+.setores__banner{
+    background-image: url();
+    background-position: center;
+    mix-blend-mode: multiply;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.mapa__setores{
+    display: flex;
+    padding: 64px 120px;
+    align-items: center;
+}
+
+.legenda__mapas{
+    font-family: var(--textos-gerais);
+    color: var(--cinza-fonte);
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 48px;
+}
+
+.legenda__titulo{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 24px;
+}
+
+/* cores da legenda */
+.mapa__item{
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+    gap: 16px; 
+}
+
+
+.box-size{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px; 
+}
+
+.color-geografico{
+    background-color: #1F8A70;
+}
+.color-ce{
+    background-color: #8AE792;
+}
+.color-rj{
+    background-color: #E8A620;
+}
+.color-pe{
+    background-color: #FF8C42;
+}
+.color-sp{
+    background-color:#2E7BA2;
+}
+
+
+/* text */
+.cabecalho__chamada{
+    padding: 64px 121.5px;
+}
+.chamada__texto{
+    text-align: left;
+}
+.text-alt{
+    text-align: right;
+}
+strong.destaque{
+
+    color: rgb(16, 90, 16);
+}
+
+
+.image-first{
+    background-image: url(/video/hidrogênio\ verde.mp4);
+}
+
+.image-second{
+    background-image: url(/img/porto-pecem-info-hidrogenio-verde.jpg);
+    order: 2;
+    width: 80em;
+}
+
+.image-fourth{
+    background-image: url(/img/porto-suape.jpg);
+    border-radius: 16px;
+    margin: 0 5.1px;
+}
+
+
+.image-fifth{
+    background-image: url(/img/onibus-USP-Foto-Governo-de-Sao-Paulo.jpeg);
+    border-radius: 16px;
+    margin: 0 5.1px;
+}
+
+.image-third{
+    background-image: url(/img/porto-do-acu-750x430.jpeg);
+    border-radius: 16px;
+    margin: 0 5.1px;
+}

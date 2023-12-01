@@ -1,0 +1,158 @@
+@import url(/assets/css/base.css);
+@import url(/assets/css/desktop.css);
+@import url(/assets/css/secoes/contato.css);
+@import url(/assets/css/secoes/informacoes.css);
+@import url(/assets/css/secoes/setores.css);
+@import url(/assets/css/secoes/sobre.css); 
+
+/** --------------------------------------Media Query------------------------------------ **/
+
+@media (max-width: 738px){
+    
+    /*----------------------------------------------------------------------------Star Home  */
+    .cabecalho__principal{
+        padding: 32px 24px;
+    }
+
+    .menu__lista{
+        flex-direction: column;
+        margin-top: 0;
+        gap: 22px;
+        text-align: center;
+    }
+
+    .cabecalho__banner{
+        background-image: url();
+        padding: 92px 25px;
+    }
+
+    .cabecalho__titulo{
+        font-size: 32px;
+    }
+
+    .cabecalho__chamada{
+        padding: 32px 24px;
+    }
+
+    .chamada__img{
+        background-image: url();
+        width: 292px;
+        height: 361px;
+    }
+
+    .chamada__texto{
+        padding: 0;
+    }
+
+    .atracoes__titulo{
+        margin: 16px 0 98px 0;
+    }
+
+    .atracoes__subtitulo{
+        font-size: 32px;
+        margin-top: 64px;
+    }
+    
+    .atracoes__itens{
+        padding: 48px 24px;
+    }
+
+    .rodape__banner{
+        background-image: url();
+    }
+
+    .rodape__container{
+        padding: 24px;
+        font-size: 20px;
+    }
+
+    .rodape__redes-sociais{
+        padding: 0 48px;
+    }
+    
+   /*------------------------------------------------ ----------------Star Sobre*/
+.experiencia__banner{
+    background-image: url();
+}
+
+.img-first{
+    background-image: url();
+}
+
+.img-second{
+    background-image: url();
+    order: -1;
+}
+
+.img-third{
+    background-image: url();
+}
+
+.chamada__texto{
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------Star setores */
+
+.setores__banner{
+    background-image: url();
+    background-size: 100%;
+}
+
+.mapa__setores{
+    flex-direction: column;
+    padding: 32px 60px;
+}
+
+.detalhes__setores{
+    padding: 32px 60px;
+}
+
+.detalhes__container{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detalhes__itens:nth-child(2){
+    margin-top: 0;
+}
+
+.image__third{
+    margin: auto;
+}
+
+/*---Star informações */
+
+.informacoes__banner{
+    background-image: url();
+    background-size: 100%;
+}
+
+.perguntas__container{
+    padding: 48px 60px;
+}
+
+/* ---Star contato */
+
+.ingressos__banner{
+    background-image: url();
+}
+
+.formulario__titulo{
+    padding: 48px 60px 0;
+    margin-bottom: 48px;
+}
+
+.formulario__container{
+    padding: 0 60px;
+}
+
+.grupo__flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.nascimento__input{
+    margin-right: calc(255px - 60px);
+}
+}

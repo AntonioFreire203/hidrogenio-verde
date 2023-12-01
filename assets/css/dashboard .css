@@ -1,0 +1,90 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("/img/destaque.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #3b7d3b;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(15, 187, 52));
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+.dashboard-container {
+    margin-top: 20px; /* Ajuste conforme necessário */
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 25px 0 #02735E;
+  }
+
+main {
+    display: flex;
+}
+
+aside {
+    flex-basis: 200px;
+    padding: 20px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(15, 187, 52));
+
+}
+
+.dashboard-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.submission-list {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(15, 187, 52));
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    height: 400px; /* Fixar altura para rolagem automática */
+}
+
+.submission-list div {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
+}
+
+.iv-search{
+    display: inline;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #038C3E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchInput{
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+button:hover {
+    background-color: #02735E;
+}
+
+#buscar-usuarios {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 10%;
+}

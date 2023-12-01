@@ -1,0 +1,98 @@
+
+@import url(/assets/css/base.css);
+@import url(/assets/css/desktop.css);
+
+body{
+    color: var(--cinza-fonte);
+}
+
+.informacoes__banner{
+    background-image: url();
+    background-size: 115%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.perguntas__container{
+    padding: 48px 222px;
+}
+
+.perguntas__titulo{
+    font-family: var(--titulos);
+    text-align: center;
+    font-size: 48px;
+    line-height: 62.4px;
+    margin-bottom: 36px;
+}
+
+/* Menu Accordion */
+
+.perguntas__lista{
+    font-family: var(--textos-gerais);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.input-accordion{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.accordion:last-child{
+    margin-bottom: 0;
+}
+
+.accordion__label{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: var(--azul-escuro-verao);
+    color: #8AE792;
+    cursor: pointer;
+}
+
+.accordion__label:hover{
+    background-color: var(azul-claro-verao);
+}
+
+.accordion__label::after {
+    content: url("data:image/svg+xml;utf8,<svg fill='white' height='38' viewBox='0 0 32 32' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accordion__content{
+    max-height: 0;
+    padding: 0 16px;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: var(--azul-claro-verao);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accordion__content a{
+    color: var(--cinza-fonte);
+}
+
+.accordion__content p{
+    margin: 0;
+}
+
+.input-accordion:checked ~ .accordion__content {
+    max-height: 100vh;
+    padding: 16px;
+}

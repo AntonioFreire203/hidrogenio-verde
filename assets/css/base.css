@@ -1,0 +1,11 @@
+:root {
+    --verde-escuro: #3B7D02;      /* Verde escuro */
+    --verde-claro: #A3D792;       /* Verde claro */
+    --verde-hoover: #5CAB23;      /* Verde hover */
+    --mostarda: #E8A620;          /* Mostarda */
+    --mostarda-pastel: #FACF9D;   /* Mostarda pastel */
+    --mostarda-claro: #FDEABD;    /* Mostarda claro */
+    --cinza-fonte: #444444;       /* Cinza para fonte */
+    --titulos: 'Calistoga', cursive;
+    --textos-gerais: 'Raleway', sans-serif;
+}
